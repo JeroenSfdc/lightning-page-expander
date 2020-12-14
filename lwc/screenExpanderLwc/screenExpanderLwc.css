@@ -1,0 +1,21 @@
+.container-expanded {
+    position: fixed;
+    z-index: 99999;
+    top: 50%;
+    margin-left: -0.5em;
+    right: 3em;
+}
+
+.container {
+    position: fixed;
+    z-index: 99999;
+    top: 50%;
+    left: 66.4%;
+}
+
+.fa {
+    font-size: 6em;
+    color: #005b77;
+    position: absolute;
+    text-shadow: 0 0 20px #005b77
+}

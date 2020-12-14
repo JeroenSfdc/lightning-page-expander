@@ -1,0 +1,3 @@
+<aura:event type="COMPONENT" description="Communicates to the RecordPageWithCollapsiblePane.cmp to either expand or collapse the most right-hand side pane">
+    <aura:attribute name="expanded" type="Boolean"/>
+</aura:event>
