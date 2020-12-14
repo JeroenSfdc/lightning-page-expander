@@ -1,4 +1,14 @@
 <template>
+
+    <template if:true={_isAppBuilder}>
+        <lightning-card>
+            <p class="slds-p-horizontal_small">
+                <lightning-icon icon-name="utility:connected_apps"></lightning-icon>
+                screenExanderLwc. This component only works on Lightning Record Pages based on the RecordPageWithCollapsiblePaneTemplate.
+            </p>
+        </lightning-card>
+    </template>
+
     <div class={_cssContainer} onclick={_expand} >
         <template if:false= {_expanded}>
             <i class="fa fa-caret-right"></i>
