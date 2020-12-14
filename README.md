@@ -1,4 +1,6 @@
 # lightning-page-expander
+![](screen_expander_demo.gif)
+
 - Create a new Lightning Page based on the 2-column `RecordPageWithCollapsiblePaneTemplate`
 - Drop the `screenExpanderLwc` onto the Lightning Page. It should be dropped in the first column at the bottom of the column.
 
