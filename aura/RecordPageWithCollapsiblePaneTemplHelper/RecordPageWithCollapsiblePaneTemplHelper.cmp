@@ -1,0 +1,18 @@
+<aura:component description="RecordPageWithCollapsiblePaneTemplHelper" implements="flexipage:availableForAllPageTypes" access="global">
+
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+    <aura:attribute name="isAppBuilder" type="Boolean" default="{!false}"/>
+    <lightning:messageChannel type="screenExpanderChannel__c" onMessage="{!c.handleExpand}" scope="APPLICATION"/>
+    <aura:registerEvent name="recordPageCollapsiblePaneEvent" type="c:RecordPageCollapsiblePaneEvent"/>
+
+    <aura:if isTrue="{!v.isAppBuilder}">
+        <lightning:card>
+            <p class="slds-p-horizontal_small">
+                <lightning:icon iconName="utility:connected_apps"/>
+                Record Page With Collapsible Pane Helper Component; drop at bottom of Lightning page most left-hand column
+                Record Page should be based on the 'RecordPageWithCollapsiblePane' Template.
+            </p>
+        </lightning:card>
+    </aura:if>
+
+</aura:component>
