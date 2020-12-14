@@ -6,6 +6,7 @@ export default class ExpandingArrowLwc extends LightningElement {
 
     @track _expanded = false;
     @track _cssContainer = 'container';
+    @track _isAppBuilder = window.location.pathname.toLowerCase().startsWith('/flexipageeditor');
 
     @wire(MessageContext)
     messageContext;
